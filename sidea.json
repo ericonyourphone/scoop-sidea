@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ericonyourphone/sidea/releases/download/v0.1.0/sidea_0.1.0_windows_amd64.zip",
+            "bin": [
+                "sidea.exe"
+            ],
+            "hash": "b1200bdb321a7c046f723bb935baf0e7c7324bbdeb9ff809716233da09b8dd3e"
+        },
+        "arm64": {
+            "url": "https://github.com/ericonyourphone/sidea/releases/download/v0.1.0/sidea_0.1.0_windows_arm64.zip",
+            "bin": [
+                "sidea.exe"
+            ],
+            "hash": "ff516799fd5b4c3b8025a4a1fe7665b768e7c5a1360e7463944c85cd32dbff3c"
+        }
+    },
+    "homepage": "https://github.com/ericonyourphone/sidea",
+    "license": "GPL-3.0-only",
+    "description": "A cassette for your Spotify, in the terminal",
+    "post_install": [
+        "Write-Host \"Side A also needs librespot for playback (cargo install librespot)\""
+    ]
+}
